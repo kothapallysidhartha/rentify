@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentify - Where Renting Meets Simplicity</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: #007bff;
+            padding: 10px 0;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .navbar-nav {
+            list-style-type: none;
+            margin-right: 20px;
+        }
+
+        .nav-item {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .cta {
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 15px 30px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta a:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">Rentify</a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="{% url 'user_login' %}">Login</a></li>
+            <li class="nav-item"><a href="{% url 'register' %}">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to Rentify</h1>
+        <p>Where Renting Meets Simplicity</p>
+        <div class="cta">
+            <a href="#properties">Explore Properties</a>
+        </div>
+    </div>
+
+    <!-- Login Section (Hidden by Default) -->
+    <div id="login" style="display: none;">
+        <!-- Login Form Goes Here -->
+    </div>
+
+    <!-- Register Section (Hidden by Default) -->
+    <div id="register" style="display: none;">
+        <!-- Register Form Goes Here -->
+    </div>
+
+    <!-- Properties Section (Hidden by Default) -->
+    <div id="properties" style="display: none;">
+        <!-- Property Listings Go Here -->
+    </div>
+</body>
+</html>

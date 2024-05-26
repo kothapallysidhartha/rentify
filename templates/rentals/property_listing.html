@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Listing</title>
+</head>
+<body>
+    <h1>Property Listings</h1>
+    <ul>
+        {% for property in properties %}
+            <li><a href="{% url 'property_details' property.id %}">{{ property.place }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
